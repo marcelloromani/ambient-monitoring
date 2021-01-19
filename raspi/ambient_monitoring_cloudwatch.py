@@ -18,7 +18,7 @@ client = boto3.client('cloudwatch')
 
 
 def get_temperature() -> float:
-    # get temperature from the sensehat humidity sensor
+    # get temperature from the SenseHat humidity sensor
     value = sense.get_temperature_from_humidity()
     value = round(value, 1)
     return value
